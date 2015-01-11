@@ -3,7 +3,7 @@ SQLITE_VERSION  ?= 3080704
 SQLITE_BASENAME := sqlite-amalgamation-$(SQLITE_VERSION)
 SQLITE_URL      := http://www.sqlite.org/2014/$(SQLITE_BASENAME).zip
 
-# Build
+# Build/Compile
 libs/armeabi/sqlite3-static: build/sqlite3.c
 	ndk-build
 

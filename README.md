@@ -39,7 +39,7 @@ http://www.sqlite.org/download.html
   ...
 ```
 
-## Compile/Build
+## Build/Compile
 
 * Make CLI and Library
 
