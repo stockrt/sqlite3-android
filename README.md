@@ -93,4 +93,4 @@ http://www.sqlite.org/download.html
 
 Note that paths and permissions may vary in your Android device or environment.
 
-Happy hacking.
+Happy hacking!
