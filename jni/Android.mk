@@ -21,7 +21,8 @@ LOCAL_STATIC_LIBRARIES  := libsqlite3-a
 LOCAL_SRC_FILES         := ../build/shell.c ../build/sqlite3.c
 LOCAL_C_INCLUDES        := ../build
 LOCAL_EXPORT_C_INCLUDES := ../build
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -fPIE
+LOCAL_LDFLAGS           := -fPIE -pie
 include $(BUILD_EXECUTABLE)
 
 
@@ -45,5 +46,6 @@ LOCAL_SHARED_LIBRARIES  := libsqlite3-so
 LOCAL_SRC_FILES         := ../build/shell.c ../build/sqlite3.c
 LOCAL_C_INCLUDES        := ../build
 LOCAL_EXPORT_C_INCLUDES := ../build
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -fPIE
+LOCAL_LDFLAGS           := -fPIE -pie
 include $(BUILD_EXECUTABLE)
