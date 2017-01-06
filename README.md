@@ -25,7 +25,7 @@ https://developer.android.com/ndk/downloads/index.html
 ## Update SQLite version if needed
 
 * No download is necessary, Makefile will take care of that for you. Use the
-  download link only to choose any `sqlite-amalgamation` version number:
+  download link only to choose any `sqlite-amalgamation` version number and year:
 
 http://www.sqlite.org/download.html
 
