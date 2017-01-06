@@ -20,7 +20,7 @@ This build scripts generate the following SQLite artifacts for Android:
   can be found in the PATH. This is a build dependency and is necessary to
   cross-compile and build Android Native Code Applications:
 
-https://developer.android.com/tools/sdk/ndk/index.html
+https://developer.android.com/ndk/downloads/index.html
 
 ## Update SQLite version if needed
 
@@ -29,13 +29,15 @@ https://developer.android.com/tools/sdk/ndk/index.html
 
 http://www.sqlite.org/download.html
 
-* Update Makefile with desired SQLite version
+* Update Makefile with desired SQLite version and corresponding year. This will
+  be used to build the full download URL from SQLite site.
 
 ```bash
   vi Makefile
 
   ...
-  SQLITE_VERSION ?= 3080704
+  SQLITE_VERSION ?= 3160100
+  SQLITE_YEAR    ?= 2017
   ...
 ```
 
