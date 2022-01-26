@@ -4,8 +4,8 @@ SQLITE_VERSION  ?= 3280000
 SQLITE_YEAR     ?= 2019
 
 SQLITE_BASENAME := sqlite-amalgamation-$(SQLITE_VERSION)
-# Complete URL sample: http://www.sqlite.org/2017/sqlite-amalgamation-3160100.zip
-SQLITE_URL      := http://www.sqlite.org/$(SQLITE_YEAR)/$(SQLITE_BASENAME).zip
+# Complete URL sample: https://www.sqlite.org/2017/sqlite-amalgamation-3160100.zip
+SQLITE_URL      := https://www.sqlite.org/$(SQLITE_YEAR)/$(SQLITE_BASENAME).zip
 
 # Build/Compile
 libs/armeabi/sqlite3-static: build/sqlite3.c
